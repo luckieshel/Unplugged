@@ -1,0 +1,887 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   body, html {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px; 
+    color: black; 
+    background: #eeeeee;
+}
+ 
+a {
+    font-weight: 700;
+    color: #23a4cc;
+    text-decoration: none;
+}
+ 
+span {
+    color: #fb416f;
+}
+
+p {
+    font-size: 1em; 
+    line-height: 1.4;
+    font-weight: 400; 
+}
+ 
+img {
+    width: 100%;
+    height: auto; 
+}
+ 
+h1, h2, h3, h4 {
+	font-weight: 700; 
+}
+ 
+h1 {
+    font-size: 1.4em;
+    line-height: 1.6; 
+}
+ 
+h2 {
+    font-size: 1.25em; 
+    line-height: 1.25em; 
+}
+
+h3 { 
+    font-size: .625em;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+ 
+figure {
+    margin: 0; 
+}
+ 
+.btn {
+    color: #fff; 
+    font-weight: 700;
+    text-transform: uppercase; 
+    line-height: 2.5;
+    text-align: center; 
+    box-shadow: 2px 2px 0px #DADADA; 
+    height: 2.5em; 
+    width: 100%; 
+    display: block; 
+    background-color: #b21e49; 
+    border: none; 
+}
+ 
+input.btn {
+    background-color: #ff1256;
+}
+
+.last-item {
+    border-bottom: none !important;
+ }
+   /* Header*/
+
+.main-header { 
+    background-color:#dddddd;
+    margin: auto; 
+    width: 100%; 
+    border-bottom: 1px solid #cccccc;
+}
+
+.logo {  
+    margin: 0 auto;
+    width: 100%;
+}
+
+nav {
+    width: 100%;      
+}
+
+nav ul {
+    list-style: none; 
+    padding: 0; 
+}
+
+nav ul li {
+    text-align: center;
+    padding: 10px 0 10px 0;
+
+}
+
+nav ul li a {
+    font-size: 1.125em; 
+    text-transform: uppercase; 
+    color: #333; 
+}
+
+nav .li-border {
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 20px; 
+}
+
+/*main content*/
+main {
+    width: 96%;
+    padding: 0 2%; 
+    margin: auto;
+	clear: both;
+}
+
+.top-story {
+    width: 100%; 
+    border-bottom: 1px solid #ccc; 
+    padding-top: 25px; 
+}
+
+.top-img {
+    width: 100%; 
+    margin: 0; 
+   
+}
+
+.top-img img {
+    width: 100%;
+}
+
+/*sidebar*/
+
+
+.sidebar {
+    width: 100%;
+}
+
+.sidebar-newsletter {
+    border-bottom: 1px solid #ccc;
+    padding: 0 10px 20px 0; 
+}
+
+.sidebar-newsletter input {
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+.sidebar-newsletter input[type="text"] {
+    padding: 5px 0; 
+    margin-bottom: 10px; 
+}
+
+.sidebar-about-us, .sidebar-faqs {
+    display: none;
+}
+
+/*Feed Section*/
+
+.feed {
+    width: 100%;
+}
+
+
+
+.feed-item {
+    clear: both; 
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px; 
+}
+
+.feed-item h2 {
+    margin: 0; 
+}
+
+.feed-item h2 a {
+    color: #222; 
+} 
+
+.feed-type {
+    text-transform: uppercase; 
+    font-size: .8em;  
+   
+    
+}
+
+.feed-img {
+    width: 45%; 
+    float: left; 
+    margin: 0; 
+    border: 3px solid #cccccc;
+
+}
+
+.feed-info {
+    float: right; 
+    width: 45%; 
+    padding-right: 10px; 
+    padding-left: 10px; 
+    line-height: 50px;
+}
+
+.feed p {
+    display: none; 
+}
+
+.last-item {
+    border-bottom: none;
+    clear: both; 
+    padding-bottom: 100px; 
+}
+
+
+
+
+/*About*/
+
+.contact-info {
+    width: 100%; 
+    padding-top: 30px; 
+    margin-left: 20px; 
+}
+
+.contact-info ul {
+    list-style: none; 
+    padding-left: none; 
+    margin-left: -40px;  
+}
+.contact-info .brooklyn {
+    margin-left: 65px; 
+}
+
+.mission {
+    margin-left: 20px; 
+    padding-top: 30px;
+}
+
+.team {
+    margin-left: 20px;
+}
+
+.team-description {
+    display: none; 
+}
+
+.team-img {
+    float: left;
+}
+
+.team-name .team-title {
+    float: right;
+}
+
+.last-one {
+    padding-bottom: 245px;
+}
+
+/*FAQs*/
+
+.faq-header {
+    margin-left: 20px; 
+}
+
+.faqs-item {
+    border-bottom: 1px solid #cccccc;
+    margin-right: 20px; 
+    margin-left: 20px;
+ }
+ 
+ .faqs-item h3 {
+    font-weight: 400;
+    font-size: 1.125em;
+    text-transform: none; 
+ }
+
+.last-faq {
+    border-bottom: none;
+    padding-bottom: 150px; 
+}
+/*footer*/
+
+footer {
+    width: 100%;
+    margin: auto;
+    border-top: 1px solid #ccc;
+    padding-top: 20px; 
+    margin-top: 20px; 
+    clear: both; 
+}
+     
+.footer-logo {
+    width: 47.5%;
+    margin: auto;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+   @media only screen and (min-width:768px) {
+    /*Tablet styles here*/
+     /* Header =========================== */
+    .main-header {
+        width: 100%;
+        margin: auto;
+        padding: 0 3%;  
+        background-color: #dddddd;
+        border:none; 
+}
+ 
+    .main-header .header-wrapper {
+        width: 100%;
+        max-width: 960px;
+        margin: 0 auto;
+        
+}
+ 
+    .logo {
+        width: 40%;
+        float: left;
+        
+    }
+ 
+    nav {
+        width: 60%;
+        float: left;
+
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline;
+        padding: 0 2%;
+        border: none;
+        position: relative;
+    }
+
+    nav .li-border {
+        border-bottom: none; 
+        display: inline; 
+    }   
+
+    /* Featured News Item =========================== */
+
+    .hero-area { 
+        padding-top: 0;
+        padding-bottom: 35px; 
+        border-bottom: 1px solid #cccccc;
+        width: 100%; 
+    }
+
+    .top-story {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 40px;   
+        border: none;  
+    }
+ 
+    .top-img {
+        width: 57%;
+        float: left;
+        border: 2px solid #000;
+        padding-top: 0; 
+        margin-top: 20px; 
+        
+    }
+ 
+    .top-info {
+      width: 38%;
+      float: left;
+      padding-left: 30px; 
+      
+    }
+
+    .top-info h1 {
+        line-height: 1.15em; 
+    }
+
+    /* Side Bar =========================== */
+ 
+    .sidebar {
+        clear: both;
+        width: 37%;
+        float: right;    
+     
+    }
+ 
+    .sidebar-about-us, .sidebar-faqs {
+        display: block;
+        border-bottom: 1px solid #ccc;
+        padding: 10px 10px 20px 0;
+        
+    }
+
+    /* News Feed Section =========================== */
+ 
+    .feed {
+        width: 60%;
+        float: left; 
+        border-right: 1px solid #ccc; 
+        margin-bottom: 150px; 
+    }
+
+    .feed h2 {
+        font-size: 1.125em; 
+    }
+
+    .feed-img {
+        width: 35%;
+    
+    }
+
+    .feed-item {
+        padding-right: 20px; 
+    }
+ 
+    .feed-info {
+        width: 57%; 
+        
+    }
+
+    /*About page*/
+
+    .contact-info {
+        width: 40%;
+        float: left;
+    }
+    
+    .mission {
+        border-top: 1px solid #cccccc;
+        border-bottom: 1px solid #cccccc;
+    }
+
+    /*FAQs*/
+
+    .faq-header {
+        padding-top: 40px; 
+        padding-bottom: 10px;
+    }
+
+    .faqs-item {
+        padding-bottom: 30px; 
+    }
+
+    .faqs-item h3 {
+        padding-bottom: 10px; 
+    }
+
+    .last-faq {
+        padding-bottom: 400px;
+    }
+
+    /* Footer =========================== */
+ 
+    .footer-logo {
+        width: 30%;
+        margin: auto;
+    }
+}
+     
+    @media only screen and (min-width:940px) {
+    /*Desktop styles here*/
+
+    h1 {
+        font-size: 1.6em; 
+        line-height: 1.8; 
+    }
+
+    h2 { 
+        font-size: 1.4em; 
+    }
+
+     /* Header =========================== */    
+    
+     .header-wrapper {
+         width: 100%; 
+         margin: 0, auto; 
+         max-width: 1200px; 
+    }
+
+    nav ul {
+        padding-top: 55px; 
+        padding-left: 300px; 
+    }
+
+    nav ul li {
+        padding-right: 30px; 
+    }
+
+    
+    /*hero area*/
+
+    .hero-area {
+        width: 65%; 
+        float: left; 
+        border: none; 
+        padding-bottom: 0;
+    }
+
+    .top-story {
+        width: 100%; 
+    }
+
+    .top-img {
+        width: 100%;
+
+         
+    }
+
+    .top-info {
+        width: 100%; 
+        padding-left: 0;
+        margin-top: 0;  
+        
+    }
+
+    
+    
+
+    /*sidebar*/
+
+    .sidebar { 
+        clear: none; 
+        width: 30%;
+        float: right; 
+        margin-left: 30px;
+        border-left: 1px solid #cccccc;
+        margin-top: 40px; 
+    }
+
+    .sidebar h2 {
+        padding-left: 20px;
+        margin-top: 20px; 
+    }
+
+    .sidebar p {
+        padding-left: 20px; 
+    }
+
+    .sidebar-newsletter input[type="text"] {
+        margin-left: 20px; 
+    }
+
+    .btn {
+        margin-left: 20px;
+    }
+     
+    .sidebar-faqs {
+        border: none; 
+     }
+
+    /*newsfeed*/
+
+    .feed {
+        width: 100%;
+        float: none; 
+        clear: both; 
+        border-right: none; 
+        border-top: 1px solid #ccc; 
+        padding-top: 20px; 
+    }
+
+    .feed p {
+        display: block; 
+        margin-top: 20px; 
+    }
+
+    .feed-img {
+        width: 20%;
+    }
+
+    /*About*/
+
+    .mission {
+        border-top: 1px solid #cccccc;
+        border-bottom: 1px solid #cccccc;
+    }
+
+    .team-img {
+        float: left;
+        width: 25%; 
+    }
+
+    .team-name .team-title {
+        float: left;
+    }
+
+    .team-description {
+        display: block;
+        float: left; 
+    }
+
+    .team-name .team-title .team-description {
+        width: 75%; 
+    }
+
+    /*FAQ*/
+
+    .last-faq {
+        padding-bottom: 540px; 
+    }
+
+    /*footer*/
+    .footer-logo{
+        width: 20%;
+    }
+    }
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
