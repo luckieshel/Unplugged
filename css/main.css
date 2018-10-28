@@ -341,18 +341,27 @@ main {
 
 .team {
     margin-left: 20px;
+    margin-right: 20px; 
 }
 
 .team-description {
     display: none; 
 }
 
-.team-img {
-    float: left;
+.team-member {
+    width: 100%; 
+    clear: both; 
+    margin-top: 30px;
+    
 }
 
-.team-name .team-title {
-    float: right;
+.team-img {
+    width: 45%;
+    border: 2px solid #cccccc;
+    float: left; 
+    margin-right: 30px; 
+    margin-bottom: 30px; 
+    clear: both; 
 }
 
 .last-one {
@@ -635,6 +644,10 @@ footer {
         border-bottom: 1px solid #cccccc;
     }
 
+    .team-img {
+        width: 20%; 
+    }
+
     /*FAQs*/
 
     .faq-header {
@@ -782,20 +795,18 @@ footer {
 
     .team-img {
         float: left;
-        width: 25%; 
-    }
-
-    .team-name .team-title {
-        float: left;
+        width: 20%; 
+        margin-right: 40px; 
+        margin-bottom: 30px; 
     }
 
     .team-description {
         display: block;
-        float: left; 
+        width: 85%; 
     }
 
-    .team-name .team-title .team-description {
-        width: 75%; 
+    .last-one {
+        padding-bottom: 400px; 
     }
 
     /*FAQ*/
