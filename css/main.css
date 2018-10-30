@@ -198,6 +198,10 @@ nav ul li {
 
 }
 
+nav i {
+	padding-right: 10px;
+}
+
 nav ul li a {
     font-size: 1.125em; 
     text-transform: uppercase; 
@@ -257,6 +261,10 @@ main {
 
 .sidebar-about-us, .sidebar-faqs {
     display: none;
+}
+
+.sidebar i {
+    padding-right: 10px; 
 }
 
 /*Feed Section*/
@@ -326,12 +334,32 @@ main {
 }
 
 .contact-info ul {
-    list-style: none; 
-    padding-left: none; 
-    margin-left: -40px;  
-}
+    list-style: none;
+    padding: 0;
+ }
+ 
+ .contact-info ul li {
+    display: inline-block;
+    vertical-align: top;
+ }
+
 .contact-info .brooklyn {
     margin-left: 65px; 
+}
+
+.map-container {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+ 
+.map-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .mission {
@@ -355,14 +383,29 @@ main {
     
 }
 
-.team-img {
-    width: 45%;
-    border: 2px solid #cccccc;
-    float: left; 
-    margin-right: 30px; 
-    margin-bottom: 30px; 
-    clear: both; 
+#team-img-jack {
+    background: url('../img/team-jack.png') center no-repeat;
+    background-size: cover;
 }
+
+#team-img-lana {
+    background: url('../img/team-lana.png') center no-repeat;
+    background-size: cover;
+}
+
+#team-img-willow {
+    background: url('../img/team-willow.png') center no-repeat;
+    background-size: cover;
+}
+
+.team-img {
+    width: 40%;
+    padding-bottom: 40%;
+    float: left;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px; 
+ }
 
 .last-one {
     padding-bottom: 245px;
@@ -514,6 +557,7 @@ footer {
         padding: 0 3%;  
         background-color: #dddddd;
         border:none; 
+        
 }
  
     .main-header .header-wrapper {
@@ -525,8 +569,7 @@ footer {
  
     .logo {
         width: 40%;
-        float: left;
-        
+        float: left;        
     }
  
     nav {
@@ -645,8 +688,12 @@ footer {
     }
 
     .team-img {
-        width: 20%; 
-    }
+        width: 20%;
+        padding-bottom: 20%;
+        float: left;
+        margin-right: 10%;
+        border: 1px solid #ccc;
+     }
 
     /*FAQs*/
 
@@ -688,11 +735,16 @@ footer {
     }
 
      /* Header =========================== */    
-    
+
      .header-wrapper {
-         width: 100%; 
-         margin: 0, auto; 
-         max-width: 1200px; 
+        width: 100%; 
+        margin: 0 auto; 
+        max-width: 1200px; 
+        
+    }
+
+    .logo {
+        margin: auto; 
     }
 
     nav ul {
@@ -794,10 +846,7 @@ footer {
     }
 
     .team-img {
-        float: left;
-        width: 20%; 
-        margin-right: 40px; 
-        margin-bottom: 30px; 
+       margin-right: 5%; 
     }
 
     .team-description {
